@@ -60,6 +60,12 @@ tempest.api.object_storage.test_object_services.PublicObjectTest.test_access_pub
 tempest.api.object_storage.test_object_services.PublicObjectTest.test_access_public_object_with_another_user_creds[id-54e2a2fe-42dc-491b-8270-8e4217dd4cdc]: not compatible with ceph
 tempest.api.object_storage.test_object_slo.ObjectSloTest.test_delete_large_object[id-87b6dfa1-abe9-404d-8bf0-6c3751e6aa77]: not compatible with ceph
 tempest.api.object_storage.test_object_version.ContainerTest.test_versioned_container[id-a151e158-dcbf-4a1f-a1e7-46cd65895a6f]: not compatible with ceph
+tempest.api.orchestration.stacks.test_neutron_resources.NeutronResourcesTestJSON.test_created_router_interface[id-89f605bd-153e-43ee-a0ed-9919b63423c5,network]: Not compatible with Contrail
+tempest.api.orchestration.stacks.test_neutron_resources.NeutronResourcesTestJSON.test_created_router[id-96af4c7f-5069-44bc-bdcf-c0390f8a67d1,network]: Not compatible with Contrail
+tempest.api.orchestration.stacks.test_neutron_resources.NeutronResourcesTestJSON.test_created_resources[id-f9e2664c-bc44-4eef-98b6-495e4f9d74b3]: Not compatible with Contrail
+tempest.api.orchestration.stacks.test_neutron_resources.NeutronResourcesTestJSON.test_created_subnet[id-e8f84b96-f9d7-4684-ad5f-340203e9f2c2,network]: Not compatible with Contrail
+tempest.api.orchestration.stacks.test_neutron_resources.NeutronResourcesTestJSON.test_created_network[id-c572b915-edb1-4e90-b196-c7199a6848c0,network]: Not compatible with Contrail
+tempest.api.orchestration.stacks.test_neutron_resources.NeutronResourcesTestJSON.test_created_server[compute,id-75d85316-4ac2-4c0e-a1a9-edd2148fc10e,network]: Not compatible with Contrail
 tempest.api.network.admin.test_agent_management.AgentManagementTestJSON.test_list_agent[id-9c80f04d-11f3-44a4-8738-ed2f879b0ff4]: Agents are not in use in Contrail.
 tempest.api.network.admin.test_agent_management.AgentManagementTestJSON.test_list_agents_non_admin[id-e335be47-b9a1-46fd-be30-0874c0b751e6]: Agents are not in use in Contrail.
 tempest.api.network.admin.test_agent_management.AgentManagementTestJSON.test_show_agent[id-869bc8e8-0fda-4a30-9b71-f8a7cf58ca9f]: Agents are not in use in Contrail.
@@ -109,10 +115,3 @@ tempest.scenario.test_network_v6.TestGettingAddress.test_multi_prefix_slaac[comp
 tempest.scenario.test_network_v6.TestGettingAddress.test_slaac_from_os[compute,id-2c92df61-29f0-4eaa-bee3-7c65bef62a43,network,slow]: Contrail specific problem. See https://bugs.launchpad.net/juniperopenstack/+bug/1604568.
 tempest.scenario.test_security_groups_basic_ops.TestSecurityGroupsBasicOps.test_port_security_disable_security_group[compute,id-7c811dcc-263b-49a3-92d2-1b4d8405f50c,network]: Contrail specific problem. See https://bugs.launchpad.net/juniperopenstack/+bug/1632961.
 tempest.scenario.test_stamp_pattern.TestStampPattern.test_stamp_pattern[compute,id-10fd234a-515c-41e5-b092-8323060598c5,image,network,volume]: See https://bugs.launchpad.net/nova/+bug/1664793.
-heat_tempest_plugin.tests.scenario.test_aodh_alarm.AodhAlarmTest.test_alarm[id-fc0f18a6-f65c-4df1-b9c5-e160dea59849]: Not applicable for mcp deployments.
-heat_tempest_plugin.tests.scenario.test_autoscaling_lbv2.AutoscalingLoadBalancerv2Test.test_autoscaling_loadbalancer_neutron[id-89459930-aa61-4557-989b-3429d3b3b612]: Not applicable for mcp deployments.
-heat_tempest_plugin.tests.scenario.test_volumes.VolumeBackupRestoreIntegrationTest.test_cinder_volume_create_backup_restore[id-c3416735-87bf-4478-85c5-b3823819eb19]: Not applicable for mcp deployments.
-heat_tempest_plugin.tests.functional.test_os_wait_condition.OSWaitCondition.test_create_stack_with_multi_signal_waitcondition[id-cc54ca6e-b91d-4ddd-80cc-24a886dfaaa0]: No applicable for mcp deployment.
-heat_tempest_plugin.tests.scenario.test_server_software_config.SoftwareConfigIntegrationTest.test_server_software_config[id-fb2afe23-d1a8-45fc-bf8d-b18fc8412972]: Not applicable.
-heat_tempest_plugin.tests.scenario.test_server_signal.ServerSignalIntegrationTest.test_server_signal_userdata_format_raw[id-8da0f6cc-60e6-4298-9e54-e1f905c5552a]: Not applicable for mcp deployment.
-heat_tempest_plugin.tests.scenario.test_server_signal.ServerSignalIntegrationTest.test_server_signal_userdata_format_software_config[id-3d753d42-7c16-4a0e-8f73-875881826626]: Not applicable for mcp deployment.
